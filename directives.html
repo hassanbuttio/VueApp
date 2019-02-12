@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>First Vue App</title>
+	<script src="vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+<!-- <h2 v-show="show">Hello</h2>
+
+ -->
+<div v-if="show == 1">
+<h2>Choose 1</h2>
+</div>
+
+
+<div v-if="show == 2">
+<h2>Choose 2</h2>	
+</div>
+
+
+</div>
+<script>
+
+var app = new Vue({
+el: "#app",
+data: {
+	show: 2
+}
+
+})
+</script>
+
+</body>
+</html>
